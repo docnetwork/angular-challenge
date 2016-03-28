@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="root">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/main.css" > 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body ng-controller="index">
+    <h1 class="fibNum">{{message}}</h1>
+    <div class="buttonWrapper">
+      <div ng-click="getExcited()" class="button reset"> RESET </div>
+      <div class="button next-itr"> NEXT FIB ITERATIVELY </div>
+      <div class="button next-rec"> NEXT FIB RECURSIVELY</div>
+    </div>
+  </body>
+</html>
