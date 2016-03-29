@@ -3,10 +3,9 @@
 	font-family: "courier";
 	font-weight: 700;
 	font-size: 40px;
-	margin-top: 150px;
 }
 .buttonWrapper {
-	margin: 0px auto;
+	margin: 0px auto 100px auto;
 	text-align: center;
 }
 .button {
