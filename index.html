@@ -6,11 +6,17 @@
     <script src="js/main.js"></script>
   </head>
   <body ng-controller="index">
-    <h1 class="fibNum">{{message}}</h1>
+    <h1 class="fibNum">{{ fib_sequence[fib_step] }}</h1>
     <div class="buttonWrapper">
-      <div ng-click="getExcited()" class="button reset"> RESET </div>
-      <div class="button next-itr"> NEXT FIB ITERATIVELY </div>
-      <div class="button next-rec"> NEXT FIB RECURSIVELY</div>
+      <div ng-click="reset()" class="button reset"> RESET </div>
+      <div ng-click="next_fib_iter()" class="button next-itr"> NEXT FIB ITERATIVELY </div>
+      <div ng-click="next_fib_recurs()" class="button next-rec"> NEXT FIB RECURSIVELY</div>
+    </div>
+
+    <h1 class="fibNum">{{ cur_fib }}</h1>
+    <div class="buttonWrapper">
+      <div ng-click="simple_reset()" class="button reset"> RESET </div>
+      <div ng-click="simple_next()" class="button next-itr"> NEXT FIB SIMPLE</div>
     </div>
   </body>
 </html>

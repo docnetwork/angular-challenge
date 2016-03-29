@@ -38,4 +38,16 @@ This is a simple test of basic CS fundamentals as well as basic Angular knowledg
 
 
 ### Solution Discussion:
-- Your solution explanation goes here.
+-I opted to write both a recursive and iterative solution. 
+-Both the iterative and recursive solutions share and array of calculated values.
+-Given the nature of 'stepping' through the Fibonacci it seemed inefficient to let an either solution go through all their steps when I should already have the previous values calculated.
+-Once either approach has calculated the value at N, it is saved and referenced instead of calculated moving forward.
+-This saving of data is a clear time saver, especially for recursion which lags on large values of N.
+-There is however a problem in my opinion. Because we save the sequence as its calculated the iterative and recursive functions will never need to run through their full algorithms. 
+-This is true to the point where the iterative fib_at_n function is never even called and the recursive fib_at_n function never needs to go more then 1 level deep.
+-This means that the recursive and iterative solutions may not be the best approach. 
+-I wrote them as proof of concept and to complete the challenge but I took a different approach for the solution I'm most happy with.
+-When possible I prefer short, clean, and easy to understand pieces of code.
+-My personal approach simply looks at the current value and the saved last value, and calculates the next value.
+-While this solution has to recalculate the next value each step, it won't have to recalculate every value on every step like a simple recursion or iteration would.
+-This solution is more space efficient, shorter and simpler, while still being O(1) for each step.
