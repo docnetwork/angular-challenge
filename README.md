@@ -51,3 +51,7 @@ This is a simple test of basic CS fundamentals as well as basic Angular knowledg
 -My personal approach simply looks at the current value and the saved last value, and calculates the next value.
 -While this solution has to recalculate the next value each step, it won't have to recalculate every value on every step like a simple recursion or iteration would.
 -This solution is more space efficient, shorter and simpler, while still being O(1) for each step.
+
+-I also included test cases for this project. Using Karma and Jasmine I have a suite of simple test cases that can be run from the command line with:
+-To run through command line use 'karma start my.conf.js --log-level debug --single-run'
+-To run through Chrome simply use 'karma start my.conf.js' 

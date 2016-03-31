@@ -24,13 +24,15 @@ indexController = myApp.controller("index", ["$scope", function ($scope) {
     }
 
     $scope.fib_at_n_iter = function(n) {
-        nmin2 = 0; nmin1 = 1;
-        for(k = 1; k <= n; ++k) {
-            next = nmin2 + nmin1;
-            nmin2 = nmin1;
-            nmin1 = next;
+        if(n == 0){return 0}
+        x = 0
+        y = 1
+        for(i = 1; i < n; i++) {
+            z = x + y
+            x = y
+            y = z
         }
-        return nmin1;
+        return y;
     }
 
 //////////////////////////////////////////////////////////////////////////
@@ -59,8 +61,8 @@ indexController = myApp.controller("index", ["$scope", function ($scope) {
     $scope.cur_fib = 0;
     $scope.prev_fib = -1;
     $scope.simple_reset = function() {
-        $scope.prev_fib = -1;
         $scope.cur_fib = 0;
+        $scope.prev_fib = -1;
     }
     $scope.simple_next = function() {
         if($scope.prev_fib == -1)
