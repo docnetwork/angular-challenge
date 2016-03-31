@@ -1,0 +1,34 @@
+.fibNum {
+	text-align: center;
+	font-family: "courier";
+	font-weight: 700;
+	font-size: 40px;
+}
+.buttonWrapper {
+	margin: 0px auto 100px auto;
+	text-align: center;
+}
+.button {
+	cursor: pointer;
+	display: inline-block;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: .85;
+}
+.button:hover {
+	opacity: 1;
+}
+
+.reset {
+	color: gray;
+	border-color: gray;
+}
+.next-itr {
+	color: green;
+	border-color: green;
+}
+.next-rec {
+	color: blue;
+	border-color: blue;
+}
