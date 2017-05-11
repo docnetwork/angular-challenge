@@ -11,7 +11,7 @@ function FibCtrl() {
 
 
   // Custom Implementation
-  vm.nickFib() {
+  vm.nickFib = function() {
 
     var n;
 
@@ -33,7 +33,7 @@ function FibCtrl() {
 
 
   // Iterative implemenation using a while loop
-  vm.iterativeFib() {
+  vm.iterativeFib = function() {
 
     var i = 0;
     var nMinus1 = 0;
@@ -67,7 +67,7 @@ function FibCtrl() {
 
 
   // Iterative implemenation using a while loop
-  vm.recursiveFib() {
+  vm.recursiveFib = function() {
 
     function calcFib(fib) {
       if (fib == 0) {
@@ -90,7 +90,7 @@ function FibCtrl() {
 
 
   // Reset the state
-  vm.resetFib() {
+  vm.resetFib = function() {
     vm.thisFib = 0;
     vm.lastFib = 0;
     vm.nFib = 0;
