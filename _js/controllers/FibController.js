@@ -13,6 +13,7 @@ function FibCtrl() {
   // Custom Implementation
   vm.nickFib = function() {
 
+    vm.nFib++;
     var n;
 
     if (vm.thisFib == 0) {
@@ -26,14 +27,15 @@ function FibCtrl() {
     // And so the wheel turns
     vm.thisFib = n;
 
-    vm.nFib++;
-
   };
 
 
 
   // Iterative implemenation using a while loop
   vm.iterativeFib = function() {
+
+    // Get NEXT fib, not current.
+    vm.nFib++;
 
     var i = 0;
     var nMinus1 = 0;
@@ -60,16 +62,17 @@ function FibCtrl() {
     vm.thisFib = n;
     vm.lastFib = nMinus1;
 
-    vm.nFib++;
-
   };
 
 
 
-  // Iterative implemenation using a while loop
-  vm.recursiveFib = function() {
+  // Recursive implemenation
+  vm.recursiveFib = function(fib) {
 
-    function calcFib(fib) {
+    // Get NEXT fib, not current.
+    vm.nFib++;
+
+    var calcFib = function(fib) {
       if (fib == 0) {
         return 0;
       } else if (fib == 1) {
@@ -77,15 +80,19 @@ function FibCtrl() {
       } else {
         return calcFib(fib - 2) + calcFib(fib - 1);
       }
+    };
+
+    // This conditional for lastFib is for compatibility with the other methods
+    if (vm.nFib == 0) {
+      vm.lastFib = 0;
+    } else {
+      vm.lastFib = calcFib(vm.nFib - 1);
     }
 
-    // This call for lastFib is for compatibility with the other methods
-    vm.lastFib = calcFib(vm.nFib - 1);
     vm.thisFib = calcFib(vm.nFib);
 
-    vm.nFib++;
-
   };
+
 
 
 
