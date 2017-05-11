@@ -38,4 +38,13 @@ This is a simple test of basic CS fundamentals as well as basic Angular knowledg
 
 
 ### Solution Discussion:
-- Your solution explanation goes here.
+I've offered three functions to calculate the Fibonacci sequence incrementally. All three share a single controller/state, so you can use them interchangeably.
+
+#### Custom Function (nickFib)
+This function uses `lastFib` and `thisFib` to calculate the next number in the sequence, rather than doing so with a loop or recursion. Iteration and recursion are pretty heavy solutions for this problem, since we're only incrementing the number on a button click rather than accepting a user argument. Because we're always starting from 0, we can just cache the last two values and ad them to get the new one, improving performance.
+
+#### Iterative Function (iterativeFib)
+The iterative method uses a `while` loop and checks it agains `nFib`, which refers to which number of the sequence we want. Each time we run this or any of these function, we increment `nFib` to maintain consistency across all implementations.
+
+#### Recursive Function (recursiveFib)
+While this function could be more concise than the way I've written it here, that's due to the fact that I wanted to keep compatability across all implementations. Because of this, I have to calculate the sequence recursively for both `thisFib` and `lastFib` on each call. If we were to settle on a single implementation, its performance could be improved.
