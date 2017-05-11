@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Angular Challenge</title>
+        <meta name="description" content="A code challenge for DocNetwork.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+        <link rel="stylesheet" href="./_css/style.css">
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="./_js/app.js" type="application/javascript"></script>
+        <script src="./_js/controllers/FibController.js" type="application/javascript"></script>
+
+    </head>
+    <body ng-app="main">
+      <section id="fib-app" class="ma0 vh-100 bg-near-white" ng-controller="FibCtrl as fc">
+        <div class="dt dt--fixed vh-100">
+          <div class="container ph3 dtc v-mid">
+            <header class="tc pb2">
+              <h1 class="f1 f-headline-l fw9 dark-green"> {{ fc.thisFib }} </h1>
+            </header>
+
+            <div id="button-container" class="center ph3-ns noselect">
+              <div class="cf">
+                <div class="fl w-100 w-third-ns tc pa2">
+                  <a class="w-100 f6 link br3 ba pa3 mb2 dib dark-green hover-bg-washed-green" ng-click="fc.nickFib()">Next Fib (Custom)</a>
+                </div>
+                <div class="fl w-100 w-third-ns tc pa2">
+                  <a class="w-100 f6 link br3 ba pa3 mb2 dib dark-green hover-bg-washed-green" ng-click="fc.iterativeFib()">Next Fib (Iterative)</a>
+                </div>
+                <div class="fl w-100 w-third-ns tc pa2">
+                  <a class="w-100 f6 link br3 ba pa3 mb2 dib dark-green hover-bg-washed-green" ng-click="fc.recursiveFib()">Next Fib (Recursive)</a>
+                </div>
+                <div class="fl w-100 tc pa2">
+                  <a class="w-100 f6 link br3 ba pa3 mb2 dib dark-red hover-bg-washed-red" ng-click="fc.resetFib()">Next Fib (Recursive)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+</html>
