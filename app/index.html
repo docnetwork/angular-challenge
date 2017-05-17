@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <title>Angular Challenge</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  </head>
+<html ng-app='fib'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular Challenge</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
-  <body>
-    <center>
-      <button>RESET</button>
-      <button>NEXT FIB</button>
-    </center>
+</head>
+<body ng-controller='fibController'>
 
-    <script src="app.js"></script>
-  </body>
+  <center class="view">
+    <h2 id="fibNum">{{fib}}</h2>
+    <button class="button reset" ng-click='clear()'>RESET</button>
+    <button class="button next" ng-click='increase()'> NEXT FIB </button>
+    <br>
+  </center>
+
+
+  <script src="app.js"></script>
+</body>
 </html>
+
+
+
