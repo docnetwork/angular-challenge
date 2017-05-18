@@ -34,6 +34,27 @@ angular.module('fib',[])
     $scope.fib = fibonacci($scope.current);
   }
 
+  $scope.iterative = () => {
+    //Make it work separately
+    $scope.current++;
+
+    let i = 0;
+    let prevNum1 = 0;
+    let prevNum2 = 0;
+    let temp = 0;
+
+    while (i < $scope.current + 1) {
+      prevNum2 = prevNum1;
+      prevNum1 = temp;
+
+      i === 1 ? temp = 1 : temp = prevNum1 + prevNum2;
+      i++;
+    }
+
+    $scope.fib = temp;
+    $scope.previous = prevNum1;
+  }
+
   //Reset count back to 0
   $scope.clear = () => {
     $scope.fib = 0;
