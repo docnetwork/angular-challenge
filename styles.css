@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin:0px;
+  font-family: sans-serif;
+}
+header {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+button.header-button {
+  border-color: #FFB114;
+  color: #FFB114;
+}
+button.header-button:hover {
+  border-color: #FFAA00;
+  background-color: #FFAA00;
+}
+button.header-button.active,
+button.header-button.active:hover,
+button.header-button.active:active,
+button.header-button:active {
+  border-color: #F5A300;
+  background-color: #F5A300;
+}
+.fib-container {
+  height:100vh;
+  width:100vh;
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.current-value {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom:25px;
+}
+
+button {
+  border: 3px solid;
+  border-radius:6px;
+  background-color: white;
+  padding:7px;
+  font-size: 16px;
+  width:100px;
+  cursor: pointer;
+}
+button.reset-button {
+  border-color: #B3B3B3;
+  color: #B3B3B3;
+}
+button.next-fib-button {
+  border-color: #8BA764;
+  color: #8BA764;
+}
+button:hover, button.active, button:active {
+  color: white;
+}
+button.reset-button:hover {
+  border-color: #808080;
+  background-color: #808080;
+}
+button.next-fib-button:hover {
+  border-color: #537D1A;
+  background-color: #537D1A;
+}
+button:active, button:focus {
+  outline: none;
+  box-shadow: none;
+}
+button.reset-button:active {
+  border-color: #787878;
+  background-color: #787878;
+}
+button.next-fib-button:active {
+  border-color: #437105;
+  background-color: #437105;
+}

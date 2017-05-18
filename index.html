@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonnaci Fun Time App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body ng-app="fibonnaciFunTimeApp">
+
+	<header>
+	  <button ui-sref="simple" ui-sref-active="active" class="header-button" ng-class="{'header-button-active': something}">Simple</button>
+	  <button ui-sref="iterative" ui-sref-active="active" class="header-button" ng-class="{'header-button-active': something}">Iterative</button>
+	  <button ui-sref="recursive" ui-sref-active="active" class="header-button" ng-class="{'header-button-active': something}">Recursive</button>
+	</header>
+	<ui-view></ui-view>
+
+	<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.js"></script>
+	<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="iterative/iterativeFibController.js"></script>
+	<script type="text/javascript" src="recursive/recursiveFibController.js"></script>
+	<script type="text/javascript" src="simple/simpleFibController.js"></script>
+	<script type="text/javascript" src="directives/fibNumberAndButtonsDirective.js"></script>
+	<script type="text/javascript" src="fibService.js"></script>
+</body>
+</html>
