@@ -59,5 +59,6 @@ angular.module('fib',[])
   $scope.clear = () => {
     $scope.fib = 0;
     $scope.previous = 0;
+    $scope.current = 0;
   }
 });
