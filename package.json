@@ -1,0 +1,23 @@
+{
+  "name": "angular-challenge",
+  "version": "1.0.0",
+  "description": "![fib](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fibonacci_spiral_34.svg/220px-Fibonacci_spiral_34.svg.png)",
+  "main": "app.js",
+  "dependencies": {
+    "jasmine": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpfein/angular-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpfein/angular-challenge/issues"
+  },
+  "homepage": "https://github.com/kpfein/angular-challenge#readme"
+}
