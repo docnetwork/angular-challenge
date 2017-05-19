@@ -78,11 +78,4 @@ describe('Fibonacci', function(){
     console.log("Iterative && Recursive Fibonacci Sequence Index - increment end: ", fibonacci.fibonacciSequenceIndex);
   })
 
-  // it("should increment fibonacciSequenceIndex by 1 - End", function(){
-  //   fibonacci.fibonacciSequenceIndex = 3;
-  //   expect(fibonacci.setFibCounter(true)).toEqual(4);
-  // })
-
-
-
 })
