@@ -1,18 +1,18 @@
-angular.module('fibonnaciFunTimeApp').controller('simpleFibController', ['$scope', 'fibService', function($scope, fibService){
+angular.module('fibonacciFunTimeApp').controller('simpleFibController', ['$scope', 'fibService', function($scope, fibService){
 
   // value interpolated in html;
   $scope.currentNum = fibService.fibValue.simple.current || 0;
 
-  // one of the two numbers to add to get next fibonnaci sequence value;
+  // one of the two numbers to add to get next fibonacci sequence value;
   var previousNum1 = fibService.fibValue.simple.prev1 || 0;
 
-  // one of the two numbers to add to get next fibonnaci sequence value;
+  // one of the two numbers to add to get next fibonacci sequence value;
   var previousNum2 = fibService.fibValue.simple.prev2 || 1;
 
   /**
-   * Adds two params to get next value in fibonnaci sequence;
-   * @param  {int} num1 one of the two numbers to add to get next fibonnaci sequence value;
-   * @param  {int} num2 one of the two numbers to add to get next fibonnaci sequence value;
+   * Adds two params to get next value in fibonacci sequence;
+   * @param  {int} num1 one of the two numbers to add to get next fibonacci sequence value;
+   * @param  {int} num2 one of the two numbers to add to get next fibonacci sequence value;
    * @return Sets new value of $scope.currentNum and updates fibService values;
    */
   function fibFunc(num1, num2){
@@ -29,8 +29,8 @@ angular.module('fibonnaciFunTimeApp').controller('simpleFibController', ['$scope
   /**
    * Sets fibService values
    * @param {int} current $scope.currentNum;
-   * @param {int} prev1   one of the two numbers to add to get next fibonnaci sequence value;
-   * @param {int} prev2   one of the two numbers to add to get next fibonnaci sequence value;
+   * @param {int} prev1   one of the two numbers to add to get next fibonacci sequence value;
+   * @param {int} prev2   one of the two numbers to add to get next fibonacci sequence value;
    */
   function setFibServiceValues(current, prev1, prev2){
     fibService.fibValue.simple.prev1 = prev1;
@@ -49,7 +49,7 @@ angular.module('fibonnaciFunTimeApp').controller('simpleFibController', ['$scope
   }
 
   /**
-   * Executes fibFunc passing the two variables representing the last two numbers in the fibonnaci sequence;
+   * Executes fibFunc passing the two variables representing the last two numbers in the fibonacci sequence;
    */
   $scope.simpleNextFib = function(){
     return fibFunc(previousNum1,previousNum2);

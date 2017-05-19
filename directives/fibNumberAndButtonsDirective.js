@@ -1,4 +1,4 @@
-angular.module('fibonnaciFunTimeApp').directive('fibNumberAndButtons', function(){
+angular.module('fibonacciFunTimeApp').directive('fibNumberAndButtons', function(){
 
   return {
     restrict: "E",

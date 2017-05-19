@@ -21,9 +21,9 @@ Fibonacci.prototype.simpleResetFib = function() {
   this.prev1 = 0;
   this.prev2 = 1;
   this.currentNum = 0;
-  console.log("Simple - reset currentNum end: ", this.currentNum)
-  console.log("Simple - reset prev1 end:", this.prev1)
-  console.log("Simple - reset prev2 end: ", this.prev2)
+  console.log("Simple - Reset currentNum: ", this.currentNum)
+  console.log("Simple - Reset prev1: ", this.prev1)
+  console.log("Simple - Reset prev1: ", this.prev2)
 };
 
 Fibonacci.prototype.iterativeNextFib = function(num) {
@@ -59,8 +59,9 @@ Fibonacci.prototype.recursiveNextFib = function(num) {
 };
 
 Fibonacci.prototype.setFibCounter = function(incrementFibCounter) {
-  incrementFibCounter ? this.fibonacciSequenceIndex++ : this.fibonacciSequenceIndex = 0;
-  return this.fibonacciSequenceIndex
+  incrementFibCounter ? fibonacciSequenceIndex++ : fibonacciSequenceIndex = 0;
+  this.fibonacciSequenceIndex = fibonacciSequenceIndex;
+  return fibonacciSequenceIndex
 };
 
 module.exports = Fibonacci;

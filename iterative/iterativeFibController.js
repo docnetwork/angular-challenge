@@ -1,14 +1,14 @@
-angular.module('fibonnaciFunTimeApp').controller('iterativeFibController', ['$scope', 'fibService', function($scope, fibService){
+angular.module('fibonacciFunTimeApp').controller('iterativeFibController', ['$scope', 'fibService', function($scope, fibService){
 
   // value interpolated in html;
   $scope.currentNum = fibService.fibValue.iterative.current || 0;
 
-  // keep track of index in fibonnaci sequence
+  // keep track of index in fibonacci sequence
   var fibonacciSequenceIndex = fibService.fibValue.iterative.fibonacciSequenceIndex || 0;
 
   /**
-   * @param  {int} num  index of fibonnaci sequence;
-   * @return value at index of fibonnaci sequence;
+   * @param  {int} num  index of fibonacci sequence;
+   * @return value at index of fibonacci sequence;
    */
   function fibFunc(num){
     switch(num){
@@ -46,7 +46,7 @@ angular.module('fibonnaciFunTimeApp').controller('iterativeFibController', ['$sc
 
   /**
    * Runs fibFunc
-   * @param  {boolean} getNextFib truthy if getting next number in fibonnaci sequence or falsy if resetting to 0;
+   * @param  {boolean} getNextFib truthy if getting next number in fibonacci sequence or falsy if resetting to 0;
    * @return Executes fibFunc() with appropriate fibonacciSequenceIndex value;
    */
   $scope.runFibFunc = function(getNextFib){

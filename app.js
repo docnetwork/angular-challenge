@@ -1,4 +1,4 @@
-angular.module('fibonnaciFunTimeApp', ['ui.router']).config(function($stateProvider, $urlRouterProvider, $httpProvider){
+angular.module('fibonacciFunTimeApp', ['ui.router']).config(function($stateProvider, $urlRouterProvider, $httpProvider){
 
   $urlRouterProvider.otherwise('/simple');
 
