@@ -44,5 +44,5 @@ My main solution to increment fibonacci sequence was starting with 0 and 1. I se
 
 I attempted to solve the extra credit problems using iterative and recursive. For the iterative, I used a `while` loop. The steps to this method is similiar to my previous solution. I start from 0 and goes all the way to the number of times the user clicks to the next fibonacci number. For this approach, I store the sum of the two previous number into a `temp` variable and set the `$scope.fib` to `temp`. I shifted the previous temp to the first previous variable and shift the first previous variable to the second previous variable. The recursion solution involved starting off with zero and checking for base case. Afterwards, it was the same as the iterative solution where I return the sum of the last two numbers.
 
-Although, I was able to have a solution for both iterative and recursive approach, I prefer my first approach due to having a lower complexity. I like the implementation and short it was.
+Although, I was able to have a solution for both iterative and recursive approach, I prefer my first approach due to having a lower complexity. I like the implementation and how short it was.
 
