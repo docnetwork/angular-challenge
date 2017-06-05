@@ -38,4 +38,11 @@ This is a simple test of basic CS fundamentals as well as basic Angular knowledg
 
 
 ### Solution Discussion:
-- Your solution explanation goes here.
+
+- The `fastFib` function is memoized so it has less work to do.
+- If building an actual app I would probably bundle assests with something like gulp, webpack, or fusebox
+- If building an actual app I would also include a transpile step in the build process so I could use
+the latest and greatest es6 and beyond features.
+- I'm not too familiar with unit testing angular 1 apps. If I had more time I'd probably research options
+in this area. Since angular 1 apps don't use node style imports I suspect testing requires some angular 1
+specific tooling.
