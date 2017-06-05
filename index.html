@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/typestyle@1.2.0/umd/typestyle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+  <title>Fib</title>
+</head>
+<body>
+  <div ng-app="app" ng-controller="appController" ng-class="styles.containerClassName">
+    <div ng-class="styles.fibClassName">{{ fibNum }}</div>
+    <div>
+      <button
+        ng-click="handleResetBtnClick()"
+        ng-class="styles.resetBtnClassName"
+      >
+        Reset
+      </button>
+      <button
+        ng-click="handleNextFibClick()"
+        ng-class="styles.nextFibBtnClassName"
+      >
+        Next Fib
+      </button>
+    </div>
+  </div>
+  <script src="app/init.js"></script>
+  <script src="app/appController.js"></script>
+  <script src="app/fibService.js"></script>
+  <script src="app/stylesService.js"></script>
+</body>
+</html>
