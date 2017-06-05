@@ -39,3 +39,7 @@ This is a simple test of basic CS fundamentals as well as basic Angular knowledg
 
 ### Solution Discussion:
 - Your solution explanation goes here.
+
+- My solution is pretty straight forward, but not being a CS major, I had to do some research on the Fibonacci sequence and the iterative and recursive process. I learned that using a function within a function/ or the recursive method, would require a lot more memory because it stores the result at each loop. Not much of a problem with small numbers but at higher indexes of the Fibonacci sequence, it could potentially overwhelm the stack. Therefore I chose the iterative method because the instructions mentioned performance being important. One point that I don't know if I am doing correct: according to the .png, my initial displayed value should be 0, but I could not figure out how to do that. My initial displayed value had to be 1, if I changed the values in the 'results' array, I would get the value of NaN and/or it would not compute anything. I will continue to research this for a solution, but I wanted to send off my project as it exists now.  In conclusion, I really enjoyed working on this. It was a fun challenge and I learned a lot. Thank you for the opportunity.
+
+- Mark
